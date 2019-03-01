@@ -4,7 +4,7 @@ module.exports = function(config) {
         port: 8124,
         colors: true,
         autoWatch: false,
-        singleRun: false,
+        singleRun: false, // for debugging
         logLevel: config.LOG_DEBUG,
 
         karmaTypescriptConfig: {
@@ -17,7 +17,7 @@ module.exports = function(config) {
         frameworks: ["mocha", "karma-typescript"],
         files: [
             "node_modules/mocha/mocha.css",
-            "node_modules/module-a/src/*.ts",
+            "node_modules/module-a/src/*.ts", // otherwise module-a seems to not be included
             "src/**/*.ts",
             "test/**/*.ts"
         ],

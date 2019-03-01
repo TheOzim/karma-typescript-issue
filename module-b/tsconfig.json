@@ -11,13 +11,15 @@
         ],
         "module": "commonjs",
         "moduleResolution": "node",
-        "target": "es6",
+        "target": "es5",
         "sourceMap": true,
         "declaration": true,
 
         "strict": true,
     },
     "include": [
+        // including module-a so that tsc does not reject the TS files on
+        // compilation in the karma testrunner
         "node_modules/module-a/src/*.ts",
         "src/**/*.ts",
         "test/**/*.ts"
