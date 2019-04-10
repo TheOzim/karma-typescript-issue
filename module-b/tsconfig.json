@@ -20,7 +20,7 @@
     "include": [
         // including module-a so that tsc does not reject the TS files on
         // compilation in the karma testrunner
-        "node_modules/module-a/src/*.ts",
+        "../module-a/src/*.ts",
         "src/**/*.ts",
         "test/**/*.ts"
     ]
